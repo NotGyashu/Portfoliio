@@ -12,19 +12,19 @@ const SkillText = () => {
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center">
       <motion.div
-        variants={slideInFromTop}
-        className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
+        variants={slideInFromLeft(500)}
+        className="Welcome-box py-[8px] px-[7px] text-xl border border-[#7976828b] bg-white"
       >
-        <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-        <h1 className="Welcome-text text-[13px]">
-          Think better with Next js 13
+        <SparklesIcon className="text-[#757475] mr-[10px] h-5 w-5" />
+        <h1 className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#686071] to-[#2f2836]">
+          Tech stack
         </h1>
       </motion.div>
       <motion.div
         variants={slideInFromLeft(0.5)}
         className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
       >
-        Making apps with modern technologies
+        Wroking with modern technologies
       </motion.div>
       <motion.div
         variants={slideInFromRight(0.5)}

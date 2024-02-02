@@ -1,3 +1,5 @@
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 export const Skill_data = [
     {
       skill_name: "Html 5",
@@ -250,3 +252,43 @@ export const Skill_data = [
       height: 60,
     },
   ];
+
+  export const works = [
+    {  key:1,
+        src:"/SpaceWebsite.png",
+        title:"Social-Arena",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+    },
+    {   key:2,
+        src:"/CardImage.png",
+        title:"Social-Arena",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+    },
+    {key:3,
+        src:"/NextWebsite.png",
+        title:"Social-Arena",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+    },
+    
+    {  key:5,
+        src:"/NextWebsite.png",
+        title:"Social-Arena",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+    },
+    {key:6,
+        src:"/SpaceWebsite.png",
+        title:"Social-Arena",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+    },
+    {   key:7,
+        src:"/CardImage.png",
+        title:"last",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+
+    },
+  ]

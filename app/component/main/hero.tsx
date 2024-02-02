@@ -1,18 +1,19 @@
 import React from 'react';
 import HeroContent from '../sub/heroContent';
+import StarCanvas from './starBackground';
 
 const Hero = ()=>{
     return (
         <div className='h-full w-full flex flex-col  relative'>
-
-            <video
+ 
+            {/* <video
             autoPlay
             muted
             loop
             className='rotate-180 absolute top-[-290px]  left-0 z-[1] w-full h-full object-cover'
             >
 <source src='/blackhole.webm' type='video/webm' />
-            </video>
+            </video> */}
             <HeroContent/>
         </div>
     )
