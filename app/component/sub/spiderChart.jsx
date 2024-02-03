@@ -1,23 +1,30 @@
-// SpiderChart.tsx
+// SpiderChart.jsx
 import React, { useEffect, useRef } from "react";
-import Chart, {
-  ChartOptions,
-  ChartType,
-  ChartTypeRegistry,
-} from "chart.js/auto";
+import Chart from "chart.js/auto";
+import {
+  RadarController,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from "chart.js";
 
-interface SpiderChartProps {
-  data: number[];
-  labels: string[];
-}
+// Register necessary chart elements and controllers
+Chart.register(
+  RadarController,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
-const SpiderChart: React.FC<SpiderChartProps> = ({ data, labels }) => {
-  const chartRef = useRef<HTMLCanvasElement>(null);
-  const chartInstance = useRef<Chart<
-    keyof ChartTypeRegistry,
-    number[],
-    ChartOptions
-  > | null>(null);
+const SpiderChart = ({ data, labels }) => {
+  const chartRef = useRef(null);
+  const chartInstance = useRef(null);
 
   useEffect(() => {
     if (chartRef.current) {
@@ -26,8 +33,9 @@ const SpiderChart: React.FC<SpiderChartProps> = ({ data, labels }) => {
         if (chartInstance.current) {
           chartInstance.current.destroy(); // Destroy existing Chart instance
         }
+
         chartInstance.current = new Chart(ctx, {
-          type: "radar" as ChartType, // Explicitly specify the type as ChartType
+          type: "radar",
           data: {
             labels: labels,
             datasets: [
@@ -48,14 +56,14 @@ const SpiderChart: React.FC<SpiderChartProps> = ({ data, labels }) => {
                 ticks: {
                   stepSize: 20,
                   font: {
-                    size: 8, // Customize tick font size
-                    family: "'Arial', sans-serif", // Customize tick font family
-                    weight: "bold", // Customize tick font weight
-                    color: "#ffffff", // Customize tick font color
+                    size: 8,
+                    family: "'Arial', sans-serif",
+                    weight: "bold",
+                    color: "#ffffff",
                   },
                 },
                 grid: {
-                  color: "#ffffff", // Customize grid line color
+                  color: "#ffffff",
                 },
               },
             },
@@ -63,10 +71,10 @@ const SpiderChart: React.FC<SpiderChartProps> = ({ data, labels }) => {
               legend: {
                 labels: {
                   font: {
-                    size: 14, // Customize legend font size
-                    family: "'Arial', sans-serif", // Customize legend font family
-                    weight: "bold", // Customize legend font weight
-                    color: "#ffffff", // Customize legend font color
+                    size: 14,
+                    family: "'Arial', sans-serif",
+                    weight: "bold",
+                    color: "#ffffff",
                   },
                 },
               },
@@ -78,7 +86,7 @@ const SpiderChart: React.FC<SpiderChartProps> = ({ data, labels }) => {
   }, [data, labels]);
 
   return (
-    <div className="h-[60vw]  border">
+    <div className="h-[60vw] border">
       <canvas ref={chartRef} style={{ height: "100%" }} />
     </div>
   );
