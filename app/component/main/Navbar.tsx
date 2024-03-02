@@ -35,7 +35,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" w-full  h-[65px]  top-0 shadow-lg z-30   bg-white  backdrop-blur-md  px-10">
+    <div className=" w-full  h-[65px] fixed top-0 shadow-lg z-[90]  cursor-pointer  bg-white  backdrop-blur-md  px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
         <a href="#about-me" className="  flex flex-row items-center ">
           <Image
@@ -46,7 +46,7 @@ const Navbar = () => {
             className="cursor-pointer rounded-full aspect-square p-[1em] "
           />
 
-          <span className="font-bold ml-[10px] hidden  text-[#373738]">
+          <span className="font-bold ml-[10px]   text-[#373738]">
             Gyashu Rahman
           </span>
         </a>

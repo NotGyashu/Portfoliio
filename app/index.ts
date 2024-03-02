@@ -1,5 +1,3 @@
-import GitHubIcon from '@mui/icons-material/GitHub';
-
 export const Skill_data = [
     {
       skill_name: "Html 5",
@@ -255,40 +253,34 @@ export const Skill_data = [
 
   export const works = [
     {  key:1,
-        src:"/SpaceWebsite.png",
+        src:"/social.png",
         title:"Social-Arena",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description: "A social media web app with lot of things to explore",
+        link:"https://social-arena.vercel.app/",
 
     },
     {   key:2,
-        src:"/CardImage.png",
-        title:"Social-Arena",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        src:"/admin.png",
+        title:"Admin-Dashboard",
+        description: "a web app with adminstrative function",
+        link:"https://notgyashu.github.io/Admin-dashboard/",
 
     },
     {key:3,
-        src:"/NextWebsite.png",
+        src:"/stock.png",
         title:"Social-Arena",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description: "a website to which shows the current status of stocks",
+        link:"https://notgyashu.github.io/stockTracker/",
 
     },
     
-    {  key:5,
-        src:"/NextWebsite.png",
+    {key:4,
+        src:"/thoughts.png",
         title:"Social-Arena",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        description: "an open diary",
+        link:"https://notgyashu.github.io/Admin-dashboard/",
 
     },
-    {key:6,
-        src:"/SpaceWebsite.png",
-        title:"Social-Arena",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-    },
-    {   key:7,
-        src:"/CardImage.png",
-        title:"last",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-    },
+    
+    
   ]

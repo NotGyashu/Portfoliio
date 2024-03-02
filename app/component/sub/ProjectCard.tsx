@@ -43,7 +43,7 @@ const ProjectCard = ({
   const [desc,setDesc] = useState(false)
   return (
     <motion.div
-      className={`absolute top-[10%] left-[24%]  w-[55%] h-[55%] cursor-pointer overflow-hidden rounded-[3rem] drop-shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-[1s] bg-white border `}
+      className={`absolute top-[10%] left-[24%]  w-[55%] h-[55%] cursor-pointer overflow-hidden rounded-[3rem]  border-[#373738] drop-shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-[1s] bg-white border `}
       style={{
         transform: cssTransformProperties,
         opacity: cssOpacity,
