@@ -9,7 +9,7 @@ const Pentograph: React.FC = () => {
       <h1 className="md:text-5xl sm:text-3xl text-xl pt-[1rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#fdfcfe] to-[#d8d2de]">
         Skills & implimentation
       </h1>
-      <div className="h-[75%] w-[50%]">
+      <div className=" h-[75%] w-[50%] ">
      
         <SpiderChart data={skillData}  labels={skillLabels}/>
       </div>

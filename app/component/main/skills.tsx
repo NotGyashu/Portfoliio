@@ -13,13 +13,13 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden  py-20"
+      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden  md:py-20 py-5 border-2"
       style={{ transform: "scale(0.9)" }}
     >
       <SkillText />
 
-      <div className="bg-white flex flex-col items-center justify-center">
-        <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center ">
+      <div className="bg-white flex flex-col gap-2 items-center justify-center w-full h-full border-2">
+        <div className="flex flex-row justify-around flex-wrap mt-4 md:gap-5 gap-2 items-center ">
           {Skill_data.map((image, index) => (
             <SkillDataProvider
               key={index}

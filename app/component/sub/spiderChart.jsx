@@ -56,7 +56,7 @@ const SpiderChart = ({ data, labels }) => {
                 ticks: {
                   stepSize: 20,
                   font: {
-                    size: 8,
+                    size: 12,
                     family: "'Arial', sans-serif",
                     weight: "bold",
                     color: "#ffffff",
@@ -71,7 +71,7 @@ const SpiderChart = ({ data, labels }) => {
               legend: {
                 labels: {
                   font: {
-                    size: 14,
+                    size: 44,
                     family: "'Arial', sans-serif",
                     weight: "bold",
                     color: "#ffffff",

@@ -22,8 +22,8 @@ export default function CarouselIndicator({
         return (
           <div
             key={index}
-            className={` h-2 w-2 rounded-full  border-black opacity-50  transition-all duration-500 hover:w-4 hover:opacity-100 
-            ${activeIndex === index ? "w-4 bg-[#373738]" : "w-2 bg-gray-500"}`}
+            className={` h-1 md:h-2 rounded-full  border-black opacity-50  transition-all duration-500 hover:w-4 hover:opacity-100 
+            ${activeIndex === index ? "md:w-4 w-2 bg-[#373738]" : "md:w-2 w-1 bg-gray-500"}`}
             onClick={() => {
               onSetActiveIndex(index);
             }}
