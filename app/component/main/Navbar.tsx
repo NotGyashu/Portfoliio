@@ -9,11 +9,16 @@ import EmailIcon from "@mui/icons-material/Email";
 import { Menu, MenuItem } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 const Navbar = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
+const [anchorEl, setAnchorEl] = useState<HTMLElement | SVGSVGElement | null>(
+  null
+);
 
-  const handleMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
+  const handleMenuOpen = (
+    event: React.MouseEvent<SVGSVGElement, MouseEvent>
+  ) => {
+    setAnchorEl(event.currentTarget as unknown as HTMLElement);
   };
+
 
   const handleMenuClose = () => {
     setAnchorEl(null);
